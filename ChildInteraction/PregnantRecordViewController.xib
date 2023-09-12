@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PregnantRecordViewController">
+            <connections>
+                <outlet property="prenanTable" destination="2mM-bD-a10" id="ADW-bs-AID"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PrenantHomeIC" translatesAutoresizingMaskIntoConstraints="NO" id="jug-9H-fL6">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCx-Y8-VVe">
+                    <rect key="frame" x="20" y="129.66666666666666" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="9sc-zz-Z84"/>
+                        <constraint firstAttribute="height" constant="35" id="dsB-cm-I6F"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="prenanAddIC"/>
+                    <connections>
+                        <action selector="prenanAddAction:" destination="-1" eventType="touchUpInside" id="0GK-dY-mrD"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6H-MJ-5Ju">
+                    <rect key="frame" x="75" y="117" width="298" height="60"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prenanSearchIC" translatesAutoresizingMaskIntoConstraints="NO" id="cUo-Tc-rG2">
+                            <rect key="frame" x="244" y="15" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Sul-EJ-6KD"/>
+                                <constraint firstAttribute="height" constant="30" id="mWV-FR-opw"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜索您创建的亲子互动计划" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nh9-pl-ElU">
+                            <rect key="frame" x="24" y="10.666666666666671" width="206" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="Moq-a8-btB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cUo-Tc-rG2" secondAttribute="trailing" constant="24" id="BhH-aO-fXt"/>
+                        <constraint firstItem="cUo-Tc-rG2" firstAttribute="centerY" secondItem="l6H-MJ-5Ju" secondAttribute="centerY" id="gIV-oq-UuB"/>
+                        <constraint firstAttribute="height" constant="60" id="hee-TQ-e4f"/>
+                        <constraint firstItem="cUo-Tc-rG2" firstAttribute="leading" secondItem="Nh9-pl-ElU" secondAttribute="trailing" constant="14" id="kap-8f-grk"/>
+                        <constraint firstItem="Nh9-pl-ElU" firstAttribute="centerY" secondItem="l6H-MJ-5Ju" secondAttribute="centerY" id="tom-hQ-KjZ"/>
+                        <constraint firstItem="Nh9-pl-ElU" firstAttribute="leading" secondItem="l6H-MJ-5Ju" secondAttribute="leading" constant="24" id="xju-3H-My3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲子计划列表(您所创建的计划都在下方展示)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YT8-ou-qa9">
+                    <rect key="frame" x="18" y="200" width="357" height="45.333333333333343"/>
+                    <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2mM-bD-a10">
+                    <rect key="frame" x="0.0" y="265.33333333333331" width="393" height="552.66666666666674"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜索您的计划" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ann-MC-afk">
+                    <rect key="frame" x="75" y="77" width="108" height="22"/>
+                    <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="2mM-bD-a10" secondAttribute="trailing" id="0MB-BN-vsM"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="jug-9H-fL6" secondAttribute="bottom" id="62c-vG-kab"/>
+                <constraint firstItem="jug-9H-fL6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AC5-Ra-IQQ"/>
+                <constraint firstItem="Ann-MC-afk" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="18" id="AtA-qK-xiP"/>
+                <constraint firstItem="2mM-bD-a10" firstAttribute="top" secondItem="YT8-ou-qa9" secondAttribute="bottom" constant="20" id="CfC-Bf-Gdk"/>
+                <constraint firstItem="zCx-Y8-VVe" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Mv3-TA-Aiy"/>
+                <constraint firstItem="l6H-MJ-5Ju" firstAttribute="centerY" secondItem="zCx-Y8-VVe" secondAttribute="centerY" id="Szd-Rg-KSJ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="jug-9H-fL6" secondAttribute="trailing" id="ULI-Bi-xud"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="YT8-ou-qa9" secondAttribute="trailing" constant="18" id="YEa-NC-hyB"/>
+                <constraint firstItem="YT8-ou-qa9" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="18" id="dY7-ue-a5B"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="2mM-bD-a10" secondAttribute="bottom" id="eUm-9L-w8S"/>
+                <constraint firstItem="l6H-MJ-5Ju" firstAttribute="top" secondItem="Ann-MC-afk" secondAttribute="bottom" constant="18" id="foj-Sh-9D1"/>
+                <constraint firstItem="jug-9H-fL6" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="nSA-QN-V7s"/>
+                <constraint firstItem="2mM-bD-a10" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="pBL-w7-eQt"/>
+                <constraint firstItem="Ann-MC-afk" firstAttribute="leading" secondItem="l6H-MJ-5Ju" secondAttribute="leading" id="pPE-nU-u3x"/>
+                <constraint firstItem="l6H-MJ-5Ju" firstAttribute="leading" secondItem="zCx-Y8-VVe" secondAttribute="trailing" constant="20" id="t7o-1O-bU8"/>
+                <constraint firstItem="YT8-ou-qa9" firstAttribute="top" secondItem="l6H-MJ-5Ju" secondAttribute="bottom" constant="23" id="urb-2t-TY3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="l6H-MJ-5Ju" secondAttribute="trailing" constant="20" id="wsA-fP-osx"/>
+            </constraints>
+            <point key="canvasLocation" x="59" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PrenantHomeIC" width="390" height="495.5"/>
+        <image name="prenanAddIC" width="25" height="24"/>
+        <image name="prenanSearchIC" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

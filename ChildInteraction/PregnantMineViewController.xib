@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PregnantMineViewController">
+            <connections>
+                <outlet property="prenanFenXiang" destination="axZ-Ge-nWP" id="Maa-bN-spp"/>
+                <outlet property="prenanGengXin" destination="3kl-hz-iFY" id="pZf-k8-1Va"/>
+                <outlet property="prenanHuanCun" destination="h5F-hm-dVS" id="96q-iF-HRU"/>
+                <outlet property="prenanLianXi" destination="cf1-cW-W8E" id="8yF-Jy-ff4"/>
+                <outlet property="prenanShangDian" destination="r0i-v5-O8F" id="HFf-iI-s7w"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prenanMineIC" translatesAutoresizingMaskIntoConstraints="NO" id="4TB-AM-owW">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5F-hm-dVS">
+                    <rect key="frame" x="31" y="189" width="331" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prenanMineCorner" translatesAutoresizingMaskIntoConstraints="NO" id="2ZK-mF-GXC">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="70"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="清理缓存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0F-f8-H9f">
+                            <rect key="frame" x="129.66666666666666" y="24.666666666666657" width="72" height="21"/>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="2ZK-mF-GXC" secondAttribute="bottom" id="2dm-te-XeV"/>
+                        <constraint firstItem="2ZK-mF-GXC" firstAttribute="leading" secondItem="h5F-hm-dVS" secondAttribute="leading" id="FZF-Un-Ydp"/>
+                        <constraint firstItem="2ZK-mF-GXC" firstAttribute="top" secondItem="h5F-hm-dVS" secondAttribute="top" id="Unj-w4-GLN"/>
+                        <constraint firstItem="D0F-f8-H9f" firstAttribute="centerX" secondItem="h5F-hm-dVS" secondAttribute="centerX" id="ZIX-4R-IqY"/>
+                        <constraint firstItem="D0F-f8-H9f" firstAttribute="centerY" secondItem="h5F-hm-dVS" secondAttribute="centerY" id="hoJ-3H-Gjl"/>
+                        <constraint firstAttribute="trailing" secondItem="2ZK-mF-GXC" secondAttribute="trailing" id="mfA-0b-6sZ"/>
+                        <constraint firstAttribute="height" constant="70" id="xeW-7h-U52"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axZ-Ge-nWP">
+                    <rect key="frame" x="31" y="289" width="331" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prenanMineCorner" translatesAutoresizingMaskIntoConstraints="NO" id="YoP-2W-I43">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="70"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnT-bv-1f6">
+                            <rect key="frame" x="147.66666666666666" y="24.666666666666686" width="36" height="21"/>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="MnT-bv-1f6" firstAttribute="centerX" secondItem="axZ-Ge-nWP" secondAttribute="centerX" id="9PU-fa-kiQ"/>
+                        <constraint firstItem="MnT-bv-1f6" firstAttribute="centerY" secondItem="axZ-Ge-nWP" secondAttribute="centerY" id="J83-iS-REO"/>
+                        <constraint firstItem="YoP-2W-I43" firstAttribute="top" secondItem="axZ-Ge-nWP" secondAttribute="top" id="OXX-Ij-X3b"/>
+                        <constraint firstItem="YoP-2W-I43" firstAttribute="leading" secondItem="axZ-Ge-nWP" secondAttribute="leading" id="c9v-ca-wcv"/>
+                        <constraint firstAttribute="trailing" secondItem="YoP-2W-I43" secondAttribute="trailing" id="e8Y-pc-bts"/>
+                        <constraint firstAttribute="bottom" secondItem="YoP-2W-I43" secondAttribute="bottom" id="sGk-yB-OB4"/>
+                        <constraint firstAttribute="height" constant="70" id="x1v-za-Tgj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3kl-hz-iFY">
+                    <rect key="frame" x="31" y="389" width="331" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prenanMineCorner" translatesAutoresizingMaskIntoConstraints="NO" id="apa-eK-qtL">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="70"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检查更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWR-BY-2nB">
+                            <rect key="frame" x="129.66666666666666" y="24.666666666666686" width="72" height="21"/>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="apa-eK-qtL" secondAttribute="bottom" id="J1l-ta-YeM"/>
+                        <constraint firstItem="lWR-BY-2nB" firstAttribute="centerX" secondItem="3kl-hz-iFY" secondAttribute="centerX" id="Kxh-9m-fre"/>
+                        <constraint firstItem="lWR-BY-2nB" firstAttribute="centerY" secondItem="3kl-hz-iFY" secondAttribute="centerY" id="Nff-rW-njF"/>
+                        <constraint firstAttribute="trailing" secondItem="apa-eK-qtL" secondAttribute="trailing" id="Nif-Pb-Xfu"/>
+                        <constraint firstItem="apa-eK-qtL" firstAttribute="top" secondItem="3kl-hz-iFY" secondAttribute="top" id="Usb-5G-Lv7"/>
+                        <constraint firstAttribute="height" constant="70" id="sSn-2A-0u0"/>
+                        <constraint firstItem="apa-eK-qtL" firstAttribute="leading" secondItem="3kl-hz-iFY" secondAttribute="leading" id="sb3-hr-hsK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0i-v5-O8F">
+                    <rect key="frame" x="31" y="89" width="331" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prenanMineCorner" translatesAutoresizingMaskIntoConstraints="NO" id="7IE-cl-Lj0">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="70"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商店评分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keX-2c-k3u">
+                            <rect key="frame" x="129.66666666666666" y="24.666666666666671" width="72" height="21"/>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="7IE-cl-Lj0" secondAttribute="bottom" id="HhR-NH-h4Q"/>
+                        <constraint firstItem="keX-2c-k3u" firstAttribute="centerY" secondItem="r0i-v5-O8F" secondAttribute="centerY" id="OQI-oH-cy3"/>
+                        <constraint firstAttribute="height" constant="70" id="TAy-TI-uNB"/>
+                        <constraint firstItem="7IE-cl-Lj0" firstAttribute="top" secondItem="r0i-v5-O8F" secondAttribute="top" id="bbX-0J-kp6"/>
+                        <constraint firstItem="keX-2c-k3u" firstAttribute="centerX" secondItem="r0i-v5-O8F" secondAttribute="centerX" id="cHm-Gz-RUK"/>
+                        <constraint firstItem="7IE-cl-Lj0" firstAttribute="leading" secondItem="r0i-v5-O8F" secondAttribute="leading" id="eaq-eU-FFE"/>
+                        <constraint firstAttribute="trailing" secondItem="7IE-cl-Lj0" secondAttribute="trailing" id="wkJ-c7-AbL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cf1-cW-W8E">
+                    <rect key="frame" x="31" y="489" width="331" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prenanMineCorner" translatesAutoresizingMaskIntoConstraints="NO" id="DAD-Wk-9RB">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="70"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系我们" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwD-jP-wwR">
+                            <rect key="frame" x="129.66666666666666" y="24.666666666666629" width="72" height="21"/>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DAD-Wk-9RB" secondAttribute="trailing" id="2ji-Vf-2Dv"/>
+                        <constraint firstItem="DAD-Wk-9RB" firstAttribute="top" secondItem="cf1-cW-W8E" secondAttribute="top" id="6x3-yU-fIs"/>
+                        <constraint firstAttribute="height" constant="70" id="OcT-To-2HH"/>
+                        <constraint firstItem="DAD-Wk-9RB" firstAttribute="leading" secondItem="cf1-cW-W8E" secondAttribute="leading" id="PR2-lD-dp6"/>
+                        <constraint firstItem="LwD-jP-wwR" firstAttribute="centerX" secondItem="cf1-cW-W8E" secondAttribute="centerX" id="ZBy-XG-AMN"/>
+                        <constraint firstItem="LwD-jP-wwR" firstAttribute="centerY" secondItem="cf1-cW-W8E" secondAttribute="centerY" id="bHC-ZX-4aX"/>
+                        <constraint firstAttribute="bottom" secondItem="DAD-Wk-9RB" secondAttribute="bottom" id="rVU-3r-c97"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3kl-hz-iFY" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="31" id="6NV-Bh-f1R"/>
+                <constraint firstItem="cf1-cW-W8E" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="31" id="C3M-UV-2b6"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="cf1-cW-W8E" secondAttribute="trailing" constant="31" id="Dgu-11-CoY"/>
+                <constraint firstItem="4TB-AM-owW" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Eeb-nE-4d0"/>
+                <constraint firstItem="r0i-v5-O8F" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="31" id="GfI-Pt-iyc"/>
+                <constraint firstItem="cf1-cW-W8E" firstAttribute="top" secondItem="3kl-hz-iFY" secondAttribute="bottom" constant="30" id="IWx-Nd-00c"/>
+                <constraint firstItem="4TB-AM-owW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="MmG-3W-Oi1"/>
+                <constraint firstItem="h5F-hm-dVS" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="31" id="NJv-Ci-par"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="r0i-v5-O8F" secondAttribute="trailing" constant="31" id="RBz-ZO-lVv"/>
+                <constraint firstItem="3kl-hz-iFY" firstAttribute="top" secondItem="axZ-Ge-nWP" secondAttribute="bottom" constant="30" id="Ra4-eY-puh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4TB-AM-owW" secondAttribute="trailing" id="hOf-NH-RWp"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="axZ-Ge-nWP" secondAttribute="trailing" constant="31" id="in4-Xt-WNj"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="3kl-hz-iFY" secondAttribute="trailing" constant="31" id="onV-o9-EDs"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="4TB-AM-owW" secondAttribute="bottom" id="pkV-LK-jA8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="h5F-hm-dVS" secondAttribute="trailing" constant="31" id="srk-id-ebp"/>
+                <constraint firstItem="axZ-Ge-nWP" firstAttribute="top" secondItem="h5F-hm-dVS" secondAttribute="bottom" constant="30" id="uaq-pM-iWX"/>
+                <constraint firstItem="axZ-Ge-nWP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="31" id="uoC-Sm-fIW"/>
+                <constraint firstItem="r0i-v5-O8F" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="xBc-Cg-mYI"/>
+                <constraint firstItem="h5F-hm-dVS" firstAttribute="top" secondItem="r0i-v5-O8F" secondAttribute="bottom" constant="30" id="yHT-V7-gvR"/>
+            </constraints>
+            <point key="canvasLocation" x="59" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="prenanMineCorner" width="255" height="56"/>
+        <image name="prenanMineIC" width="133.5" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

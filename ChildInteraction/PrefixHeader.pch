@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  NewDeBug
+//
+//  Created by yxx on 2023/3/1.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define NweDeBugColor [UIColor colorWithHex:0xB22222];
+#define APP_NAME ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"])
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define TakePhone(PhoneNumber) [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",PhoneNumber]] options:@{UIApplicationOpenURLOptionUniversalLinksOnly : @NO} completionHandler:^(BOOL success) {}]
+#pragma mark
+#define ISNULLARRAY(arr) (arr == nil || (NSObject *)arr == [NSNull null] || arr.count == 0)
+#define ISNULL(obj)      (obj == nil || (NSObject *)obj == [NSNull null])
+#define ISNULLSTR(str)   (str == nil || (NSObject *)str == [NSNull null] || str.length == 0)
+//weakself
+#define kWeakSelf(type)__weak typeof(type)weak##type = type;
+//strongself
+#define kStrongSelf(type)__strong typeof(type)type = weak##type;
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+#import <IQKeyboardManager.h>
+#import <MJRefresh.h>
+#import <SDWebImage/SDWebImage.h>
+#import <YYModel.h>
+#import <MMKV/MMKV.h>
+#import <LYEmptyView/LYEmptyView.h>
+#import <LYEmptyViewHeader.h>
+#import "MJExtension.h"
+#import <IQDropDownTextField/IQDropDownTextField.h>
+#import <SZTextView/SZTextView.h>
+#import "SVProgressHUD.h"
+#import "UIView+TapBlock.h"
+#import "PrenanRecordModel.h"
+#import "UIColor+Extension.h"
+#import "UIView+Corners.h"
+#import "UIView+origin.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
